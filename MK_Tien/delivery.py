@@ -31,7 +31,7 @@ except Exception as e:
     exit()
 
 # Tính toán khoảng thời gian từ thứ Hai tuần trước đến hết Chủ Nhật tuần trước
-today = datetime.now() - timedelta(weeks=1)  
+today = datetime.now() - timedelta(weeks=0)  
 start_of_this_week = today - timedelta(days=today.weekday())  # Tìm thứ Hai của tuần hiện tại
 start_of_last_week = start_of_this_week - timedelta(weeks=1)  # Tìm thứ Hai của tuần trước
 end_of_last_week = start_of_this_week - timedelta(days=1)  # Chủ Nhật tuần trước
