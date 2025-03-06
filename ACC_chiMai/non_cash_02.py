@@ -69,6 +69,8 @@ SELECT
 				WHEN PMT_code = "VOUCH" THEN '131017'
 				WHEN PMT_code = "BTF" THEN '131017'
 				WHEN PMT_code = "POINT" THEN '131019'
+				WHEN a.PMT_code = 'MSB' THEN '131038'
+
 				ELSE '131013' 
 			END 
 			) AS ACCOUNT,
